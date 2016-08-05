@@ -95,7 +95,7 @@
     }
 
     [displayLink setPaused:NO];
-    [[((NSObject <UIApplicationDelegate> *)([UIApplication sharedApplication].delegate)) window].rootViewController.view addSubview:fpsLabel];
+    [[((NSObject <UIApplicationDelegate> *)([UIApplication sharedApplication].delegate)) window] addSubview:fpsLabel];
 }
 
 - (void)openWithHandler:(void (^)(NSInteger fpsValue))handler{
